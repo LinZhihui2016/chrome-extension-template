@@ -13,7 +13,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "node",
+      "chrome"
     ],
     "paths": {
       "@/*": [
@@ -28,6 +30,8 @@
     ]
   },
   "include": [
+    "**/*.ts",
+    "**/*.vue",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
