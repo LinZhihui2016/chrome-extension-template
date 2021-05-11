@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import TT from "@/components/TT.vue";
+import TT from "@/components/common/TT.vue";
 
 export default defineComponent({
   name: "T",

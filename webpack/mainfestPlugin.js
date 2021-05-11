@@ -26,7 +26,6 @@ class ManifestPlugin {
     const templateText = fs.readFileSync(manifestTemplate, "utf-8");
     const manifest = JSON.parse(templateText);
     compiler.hooks.afterEmit.tap(pluginName, (compilation) => {
-      console.log("???");
       const js = {
         background: [],
         chunk: [],

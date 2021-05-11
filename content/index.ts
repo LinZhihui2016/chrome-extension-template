@@ -5,11 +5,11 @@ import { contentInit } from "@/helper/content";
 
 const thisClient = Client.content;
 const msgListener = new MsgListener(thisClient);
-
-msgListener.addListener(Client.background, "expressData", () => {
-  contentInit(Content, (app) => {
-    app.provide(msgListenerKey, msgListener);
-  });
-  return "init";
-});
-msgListener.listen();
+msgListener
+  .addListener(Client.background, "expressData", () => {
+    contentInit(Content, (app) => {
+      app.provide(msgListenerKey, msgListener);
+    });
+    return "init";
+  })
+  .listen();

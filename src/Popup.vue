@@ -21,7 +21,6 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import axios from "axios";
 
 export default defineComponent({
   name: "App",

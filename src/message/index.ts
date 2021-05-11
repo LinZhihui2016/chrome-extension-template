@@ -73,6 +73,7 @@ export class MsgListener {
   ) {
     const key = this.joinKey(from, action);
     this.map.set(key, handle);
+    return this;
   }
   listen() {
     chrome.runtime.onMessage.addListener(this.fn.bind(this));
